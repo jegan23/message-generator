@@ -4,3 +4,17 @@ const depressedEmotions = ['Someone is always there to help you.', 'You not alon
 //console.log(depressedEmotions);
 const angryEmotions = ['Take deep breaths.', 'Express your frustration to someone you care.', 'Defuse anger with humor.']
 //console.log(angryEmotions);
+
+const messageGenerator = () => {
+    let happy = happyEmotions[Math.floor(Math.random() * happyEmotions.length)];
+    //console.log(happy);
+    let depressed = depressedEmotions[Math.floor(Math.random() * depressedEmotions.length)];
+    //console.log(depressed);
+    let angry = angryEmotions[Math.floor(Math.random() * angryEmotions.length)];
+    //console.log(angry);
+    console.log('If your feeling happy right now. Here is a joke to lighten up your day even more. ' + (happy));
+    console.log('If your feeling down, remember that ' + (depressed));
+    console.log('If your feeling angry, Remeber to ' + (angry));
+};
+
+messageGenerator();
